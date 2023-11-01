@@ -1,0 +1,20 @@
+[package]
+name = "gistlist"
+authors = ["Travis Brown <travisrobertbrown@gmail.com>"]
+homepage = "https://github.com/travisbrown/gistlist"
+repository = "https://github.com/travisbrown/gistlist"
+description = "List all of your gists using the GitHub API"
+keywords = ["git", "github"]
+license-file = "LICENSE"
+readme = "README.md"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cli-helpers = "0.1"
+once_cell = "1"
+thiserror = "1"
+regex = "1"
+reqwest = { version = "0.11", features = ["json"] }
+serde_json = "1"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
